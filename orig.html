@@ -10,31 +10,32 @@
         <meta name="author" content="blueforest">
         <link rel="icon" type="image/x-icon" href="./favicon.ico">
         <title>BlueForest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./output.css" rel="stylesheet">
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         
     </head>
     
-    <body class="">
+    <body>
         <nav class="w-full bg-slate-100 h-[10vh] sm:h-[12vh] min-h-[80px] flex justify-center items-center">
             <div class="py-3 w-[90vw] sm:w-[80vw] flex gap-2 items-center">
-            <div class="flex justify-center items-center gap-1">
-                <a href="http://localhost:3000" class="z-10" >
-                    <img src="./blue-forest-reduced.png" alt="Blueforest company logo" width="70" height="70" />
-                </a>
-            </div>
-                
-            <div class="w-full h-full flex justify-end gap-12 text-lg z-10 mr-2 sm:mr-10">
-                <button class="hover:underline" id="about-button">Sobre nosotros</button>
-                <button class="hover:underline" id="contact-button">Contáctanos</button>
-            </div>
+                <div class="flex justify-center items-center gap-1">
+                    <a href="" class="z-10" >
+                        <img src="./blue-forest-reduced.png" alt="Blueforest company logo" width="70" height="70" />
+                    </a>
+                </div>
+                    
+                <div class="w-full h-full flex justify-end gap-6 sm:gap-12 z-10 text-md sm:text-xl mr-2 sm:mr-10">
+                    <button class="hover:underline underline-offset-4" id="about-button">Sobre nosotros</button>
+                    <button class="hover:underline underline-offset-4" id="contact-button">Contáctanos</button>
+                </div>
             </div>
         </nav>
         
         <main class="flex min-h-screen flex-col items-center justify-between pb-40 sm:pb-32 bg-slate-900">
             <div class="bg-black w-full h-[80vh] min-h-80">
                 <video class="w-full h-full object-cover opacity-50 blur-[2px]" autoPlay loop muted>
-                    <source src="./particles-background.mp4"></source>
+                    <source src="./particles-background-compressed.mp4"></source>
                     Your browser does not support the video tag.
                 </video>
                 
@@ -118,14 +119,14 @@
                     </div>
                         
                     <div class="mt-10 flex flex-col sm:flex-row justify-center items-center">
-                        <div class="w-[90%] flex justify-between">
+                        <div class="w-[90%] flex flex-col sm:flex-row justify-between items-baseline">
                         <p class="text-white pb-6 sm:pb-0">Si prefiere un trato más directo...</p>
                         
                         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
                         <a id="calendly-button" 
                             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/blue-forest'});return false;"
-                            class="calendly-widget bg-white text-black  hover:bg-slate-200 py-2 px-6 text-md inline-flex items-center justify-center whitespace-nowrap rounded-md ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300">
+                            class="calendly-widget bg-white text-black hover:bg-slate-200 py-2 px-2 sm:px-6 text-md inline-flex items-center justify-center whitespace-nowrap rounded-md ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2">
                             Reserva una cita virtual con nosotros!
                         </a>
                         </div>
